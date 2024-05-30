@@ -60,7 +60,7 @@ class ModelParams(ParamGroup):
         # visual
         self.render_process=True
         # waymo
-        self.start_time = 0
+        self.start_time = 0 # now hard-coded
         self.end_time = 49
         self.num_objs = 256 
         self.num_pts = 1500000 
