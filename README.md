@@ -79,6 +79,7 @@ python train.py -s $data_dir --port 6017 --expname "waymo" --start_checkpoint "$
 ```
 Then you can get rendering RGB videos, ground truth RGB videos, depth videos, dynamic rgb videos and static rgb videos.
 ## Acknowledgments
+Credits to @Korace0v0 for building 3D Gaussians for street scenes. Many thanks!
 
 Our code is based on [4D Gaussians](https://github.com/hustvl/4DGaussians/tree/master) and [EmerNeRF](https://github.com/NVlabs/EmerNeRF?tab=readme-ov-file). 
 
