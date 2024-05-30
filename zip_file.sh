@@ -1,0 +1,1 @@
+zip -r gs.zip . -x "exp*/*" "ckpts/*" "logs/*" "data/*" "SIBR_viewers/*"

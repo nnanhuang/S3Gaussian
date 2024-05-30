@@ -1,0 +1,8 @@
+plyfile
+opencv-python
+open3d
+# Waymo Open Dataset dependencies
+waymo-open-dataset-tf-2-11-0==1.6.0
+imageio
+imageio-ffmpeg
+mmcv==1.6.0
