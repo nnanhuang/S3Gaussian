@@ -1,4 +1,4 @@
-# $\textit{S}^3$Gaussian: Self-Supervised Street Gaussians for Autonomous Driving
+# <i>S</i><sup>3</sup>Gaussian: Self-Supervised Street Gaussians for Autonomous Driving
 ### [Paper]()  | [Project Page]() 
 
 <!-- > SelfOcc: Self-Supervised Vision-Based 3D Occupancy Prediction, CVPR 2024 -->
