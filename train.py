@@ -40,11 +40,11 @@ from scene.gaussian_model import merge_models
 
 to8b = lambda x : (255*np.clip(x.cpu().numpy(),0,1)).astype(np.uint8)
 
-try:
-    from torch.utils.tensorboard import SummaryWriter
-    TENSORBOARD_FOUND = True
-except ImportError:
-    TENSORBOARD_FOUND = False
+# try:
+#     from torch.utils.tensorboard import SummaryWriter
+#     TENSORBOARD_FOUND = True
+# except ImportError:
+TENSORBOARD_FOUND = False
    
 current_time = time.strftime("%Y-%m-%d_%H-%M-%S", time.localtime())
 
