@@ -4,7 +4,7 @@ import types
 from typing import List, Tuple, Union
 
 import numpy as np
-import timm
+# import timm
 import torch
 import torch.nn.modules.utils as nn_utils
 from PIL import Image
