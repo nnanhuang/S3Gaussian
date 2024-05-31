@@ -1,5 +1,5 @@
 # <i>S</i><sup>3</sup>Gaussian: Self-Supervised Street Gaussians for Autonomous Driving
-### [Paper]()  | [Project Page](https://wzzheng.net/S3Gaussian) 
+### [Paper](https://arxiv.org/abs/2405.20323)  | [Project Page](https://wzzheng.net/S3Gaussian) 
 
 > <i>S</i><sup>3</sup>Gaussian: Self-Supervised Street Gaussians for Autonomous Driving
 
@@ -9,13 +9,11 @@
 
 <i>S</i><sup>3</sup>Gaussian employs 3D Gaussians to model dynamic scenes for autonomous driving ***without*** other supervisions (e.g., 3D bounding boxes).
 
-<p align="center">
-  <img src="./assets/compare.jpg" width=800>
-</p>
+![vis](./assets/vis2.png)
 
 ## News
-- **[2023/5/30]** Training & Evaluation code release!.
-- **[2024/5/30]** Paper released on [arXiv](https://arxiv.org/abs/2311.12754).
+- **[2023/5/31]** Training & evaluation code release!
+- **[2024/5/31]** Paper released on [arXiv](https://arxiv.org/abs/2405.20323).
 
 ## Demo
 
@@ -24,7 +22,11 @@
 ## Overview
 ![overview](./assets/pipeline.png)
 
-To tackle the challenges in self-supervised street scene decomposition, we propose a multi-resolution hexplane-based encoder to encode 4D grid into feature planes and a multi-head Gaussian decoder to decode them into deformed 4D Gaussians. We optimize the over model without extra annotations in a self-supervised manner and achieve superior scene decomposition ability and rendering quality.
+To tackle the challenges in self-supervised street scene decomposition, we propose a multi-resolution hexplane-based encoder to encode 4D grid into feature planes and a multi-head Gaussian decoder to decode them into deformed 4D Gaussians. We optimize the overall model without extra annotations in a self-supervised manner and achieve superior scene decomposition ability and rendering quality.
+
+## Results
+
+![overview](./assets/results.png)
 
 ## Getting Started
 
@@ -90,6 +92,10 @@ Thanks to these excellent open-sourced repos!
 
 If you find this project helpful, please consider citing the following paper:
 ```
-@article{
-}
+@article{huang2024s3gaussian,
+        title={S3Gaussian: Self-Supervised Street Gaussians for Autonomous Driving},
+        author={Huang, Nan and Wei, Xiaobao and Zheng, Wenzhao and An, Pengju and Lu, Ming and Zhan, Wei and Tomizuka,    Masayoshi and Keutzer, Kurt and Zhang, Shanghang},
+        journal={arXiv preprint arXiv:2405.20323},
+        year={2024}
+      }
 ```
