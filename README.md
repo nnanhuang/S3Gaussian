@@ -83,6 +83,8 @@ Then you can get rendering RGB videos, ground truth RGB videos, depth videos, dy
 ## Acknowledgments
 Credits to @[Korace0v0](https://github.com/korace0v0) for building 3D Gaussians for street scenes. Many thanks!
 
+Special thanks to [StreetGaussians](https://github.com/zju3dv/street_gaussians) for sharing visualization results!
+
 Our code is based on [4D Gaussians](https://github.com/hustvl/4DGaussians/tree/master) and [EmerNeRF](https://github.com/NVlabs/EmerNeRF?tab=readme-ov-file). 
 
 Thanks to these excellent open-sourced repos!
