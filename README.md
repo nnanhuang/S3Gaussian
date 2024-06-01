@@ -64,7 +64,7 @@ If you want to try novel view  synthesis, use
 For training next clip (eg. 51-100 frames), run 
 ```
 python train.py -s $data_dir --port 6017 --expname "waymo" --model_path $model_path 
---prior_checkpoint "$prior_dir/chkpnt_fine_50000.pth"
+--prior_checkpoint "$prior_dir/chkpnt_fine_50000.pth" --configs "arguments/stage2.py"
 ```
 Also, you can load an existing checkpoint with:
 

@@ -62,6 +62,7 @@ class ModelParams(ParamGroup):
         # waymo
         self.start_time = 0 # now hard-coded
         self.end_time = 49
+        self.original_start_time = 0 # now hard-coded
         self.num_objs = 256 
         self.num_pts = 1500000 
         # mask loading options

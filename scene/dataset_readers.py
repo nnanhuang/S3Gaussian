@@ -600,7 +600,7 @@ def readWaymoInfo(path, white_background, eval, extension=".png", use_bg_gs=Fals
                   load_intrinsic = False, load_c2w = False,
                   start_time = 0, end_time = -1, num_pts = 5000, 
                   save_occ_grid = False, occ_voxel_size = 0.4, recompute_occ_grid=True,
-                  stride = 10
+                  stride = 10 , original_start_time = 0
                   ):
     ORIGINAL_SIZE = [[1280, 1920], [1280, 1920], [1280, 1920], [884, 1920], [884, 1920]]
     OPENCV2DATASET = np.array(
@@ -675,7 +675,7 @@ def readWaymoInfo(path, white_background, eval, extension=".png", use_bg_gs=Fals
     # ------------------
     # construct timestamps
     # ------------------
-    original_start_time = 0
+    # original_start_time = 0
     idx_list = range(original_start_time, end_time)
     # map time to [0,1]
     timestamp_mapper = {}

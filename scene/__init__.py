@@ -74,7 +74,8 @@ class Scene:
                                     save_occ_grid = args.save_occ_grid,
                                     occ_voxel_size = args.occ_voxel_size,
                                     recompute_occ_grid = args.recompute_occ_grid,
-                                    stride = args.stride
+                                    stride = args.stride,
+                                    original_start_time = args.original_start_time,
                                     )
             dataset_type="waymo"
         else:
