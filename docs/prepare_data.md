@@ -27,7 +27,7 @@ Start by downloading the necessary data samples as follows:
 For example, to obtain the 114th, 700th, and 754th scenes from the Waymo Open Dataset, execute:
 
 ```shell
-python datasets/download_waymo.py \
+python data/download_waymo.py \
     --target_dir ./data/waymo/raw \
     --scene_ids 114 700 754
 ```
