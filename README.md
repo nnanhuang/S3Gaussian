@@ -84,8 +84,11 @@ For more scripts examples, please check [here](scripts).
 
 You can visualize and eval a checkpoints follow:
 ```python
-python train.py -s $data_dir --port 6017 --expname "waymo" --start_checkpoint "$ckpt_dir/chkpnt_fine_50000.pth"
---eval_only
+python train.py -s $data_dir --port 6017 --expname "waymo" --start_checkpoint "$ckpt_dir/chkpnt_fine_50000.pth" --model_path $model_path --eval_only
+```
+If you use different configs, you will need to add them as well:
+```
+--configs "arguments/nvs.py"
 ```
 Then you can get rendering RGB videos, ground truth RGB videos, depth videos, dynamic rgb videos and static rgb videos.
 ## Acknowledgments
