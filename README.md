@@ -45,9 +45,9 @@ pip install -e submodules/simple-knn
 ```
 
 ### Preparing Dataset
+Follow detailed instructions in [Prepare Dataset](docs/prepare_data.md). 
 
-Follow detailed instructions in [Prepare Dataset](docs/prepare_data.md).
-
+We only use dynamic32 and static32 split.
 
 ### Training
 
@@ -60,12 +60,20 @@ If you want to try novel view  synthesis, use
 ```
 --configs "arguments/nvs.py"
 ```
+For instance, you can try:
+```
+python train.py -s "./data/processed/dynamic32/training/022" --expname "waymo" --model_path "./work_dirs/phase1/dynamic/recon/022"
+```
 
 For training next clip (eg. 51-100 frames), run 
 ```
-python train.py -s $data_dir --port 6017 --expname "waymo" --model_path $model_path 
---prior_checkpoint "$prior_dir/chkpnt_fine_50000.pth" --configs "arguments/stage2.py"
+python train.py -s $data_dir --port 6017 --expname "waymo" --model_path $model_path --prior_checkpoint "$prior_dir/chkpnt_fine_50000.pth" --configs "arguments/stage2.py"
 ```
+For instance, you can try:
+```
+python train.py -s "./data/processed/dynamic32/training/022" --expname "waymo" --model_path "./work_dirs/phase1/dynamic/recon/p2/022" --prior_checkpoint "./work_dirs/phase1/dynamic/recon/022/chkpnt_fine_50000.pth" --configs "arguments/stage2.py"
+```
+
 Also, you can load an existing checkpoint with:
 
 ```python
