@@ -369,7 +369,7 @@ def constructCameras_waymo(frames_list, white_background, mapper = {},
     cam_infos = []
     for idx, frame in enumerate(frames_list):
         # current frame time
-        time = mapper[frame["time"] + start_time - original_start_time]
+        time = mapper[frame["time"]]
         # ------------------
         # load c2w
         # ------------------
@@ -982,7 +982,7 @@ def readWaymoInfo(path, white_background, eval, extension=".png", use_bg_gs=Fals
     test_frames_list = []
     full_frames_list = []
     for idx, t in enumerate(train_timestamps):
-        frame_dict = dict(  time = t,   # 保存 相对帧索引
+        frame_dict = dict(  time = time_line[t+start_time-original_start_time],   # 保存 相对帧索引
                             transform_matrix = cam_to_worlds[train_idx[idx]],
                             file_path = img_filepaths[train_idx[idx]],
                             intrinsic = intrinsics[train_idx[idx]],
@@ -997,7 +997,7 @@ def readWaymoInfo(path, white_background, eval, extension=".png", use_bg_gs=Fals
         )
         train_frames_list.append(frame_dict)
     for idx, t in enumerate(test_timestamps):
-        frame_dict = dict(  time = t,   # 保存 相对帧索引 
+        frame_dict = dict(  time = time_line[t+start_time-original_start_time],   # 保存 相对帧索引 
                             transform_matrix = cam_to_worlds[test_idx[idx]],
                             file_path = img_filepaths[test_idx[idx]],
                             intrinsic = intrinsics[test_idx[idx]],
@@ -1015,7 +1015,7 @@ def readWaymoInfo(path, white_background, eval, extension=".png", use_bg_gs=Fals
         full_frames_list = train_frames_list
     else:
         for idx, t in enumerate(timestamps):
-            frame_dict = dict(  time = t,   # 保存 相对帧索引 
+            frame_dict = dict(  time = time_line[t+start_time-original_start_time],   # 保存 相对帧索引 
                                 transform_matrix = cam_to_worlds[full_idx[idx]],
                                 file_path = img_filepaths[full_idx[idx]],
                                 intrinsic = intrinsics[full_idx[idx]],
