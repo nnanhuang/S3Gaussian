@@ -77,7 +77,7 @@ python train.py -s "./data/processed/dynamic32/training/022" --expname "waymo" -
 Also, you can load an existing checkpoint with:
 
 ```python
-python train.py -s $data_dir --port 6017 --expname "waymo" --start_checkpoint "$ckpt_dir/chkpnt_fine_30000.pth"
+python train.py -s $data_dir --port 6017 --expname "waymo" --start_checkpoint "$ckpt_dir/chkpnt_fine_30000.pth" --model_path $model_path 
 ```
 For more scripts examples, please check [here](scripts).
 ### Evaluation and Visualization
