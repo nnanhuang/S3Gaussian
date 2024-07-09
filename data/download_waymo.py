@@ -79,7 +79,7 @@ if __name__ == "__main__":
     )
     args = parser.parse_args()
     os.makedirs(args.target_dir, exist_ok=True)
-    total_list = open("data/waymo_train_list.txt", "r").readlines()
+    total_list = open("data/waymo/waymo_train_list.txt", "r").readlines()
     if args.split_file is None:
         file_names = [total_list[i].strip() for i in args.scene_ids]
     else:
