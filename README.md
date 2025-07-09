@@ -12,8 +12,9 @@
 ![vis](./assets/vis2.png)
 
 ## News
-- **[2023/5/31]** Training & evaluation code release!
+- **[2025/7/9]** **🚀 Check out our new work [EMD (ICCV2025)](https://qingpowuwu.github.io/emd/): a plug-and-play module for street reconstruction.**
 - **[2024/5/31]** Paper released on [arXiv](https://arxiv.org/abs/2405.20323).
+- **[2023/5/31]** Training & evaluation code release!
 
 ## Demo
 
