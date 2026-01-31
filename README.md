@@ -3,7 +3,7 @@
 
 > <i>S</i><sup>3</sup>Gaussian: Self-Supervised Street Gaussians for Autonomous Driving
 
-> [Nan Huang](https://github.com/nnanhuang)<sup>*§</sup>, [Xiaobao Wei](https://ucwxb.github.io/)<sup>*</sup>, [Wenzhao Zheng](https://wzzheng.net/)<sup>†</sup>, Pengju An, [Ming Lu](https://lu-m13.github.io/), [Wei Zhan](https://zhanwei.site/), [Masayoshi Tomizuka](https://me.berkeley.edu/people/masayoshi-tomizuka/), [Kurt Keutzer](https://people.eecs.berkeley.edu/~keutzer/), [Shanghang Zhang](https://www.shanghangzhang.com/)<sup>‡</sup>
+> [Nan Huang](https://github.com/nnanhuang)\*<sup>§</sup>, [Xiaobao Wei](https://ucwxb.github.io/)\*, [Wenzhao Zheng](https://wzzheng.net/)<sup>†</sup>, Pengju An, [Ming Lu](https://lu-m13.github.io/), [Wei Zhan](https://zhanwei.site/), [Masayoshi Tomizuka](https://me.berkeley.edu/people/masayoshi-tomizuka/), [Kurt Keutzer](https://people.eecs.berkeley.edu/~keutzer/), [Shanghang Zhang](https://www.shanghangzhang.com/)<sup>‡</sup>
 
 \* Equal contribution § Work done while interning at UC Berkeley † Project leader ‡ Corresponding author
 
