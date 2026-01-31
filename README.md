@@ -12,6 +12,7 @@
 ![vis](./assets/vis2.png)
 
 ## News
+- **[2026/1/31]** <i>S</i><sup>3</sup>Gaussian has been accepted by ICRA 2026.
 - **[2025/7/9]** **🚀 Check out our new work [EMD (ICCV2025)](https://qingpowuwu.github.io/emd/): a plug-and-play module for street reconstruction.**
 - **[2024/5/31]** Paper released on [arXiv](https://arxiv.org/abs/2405.20323).
 - **[2023/5/31]** Training & evaluation code release!
@@ -106,10 +107,10 @@ Thanks to these excellent open-sourced repos!
 
 If you find this project helpful, please consider citing the following paper:
 ```
-@article{huang2024s3gaussian,
-        title={S3Gaussian: Self-Supervised Street Gaussians for Autonomous Driving},
-        author={Huang, Nan and Wei, Xiaobao and Zheng, Wenzhao and An, Pengju and Lu, Ming and Zhan, Wei and Tomizuka,    Masayoshi and Keutzer, Kurt and Zhang, Shanghang},
-        journal={arXiv preprint arXiv:2405.20323},
-        year={2024}
-      }
+@inproceedings{huang2026s3gaussian,
+  title={S3Gaussian: Self-Supervised Street Gaussians for Autonomous Driving},
+  author={Huang, Nan and Wei, Xiaobao and Zheng, Wenzhao and An, Pengju and Lu, Ming and Zhan, Wei and Tomizuka, Masayoshi and Keutzer, Kurt and Zhang, Shanghang},
+  booktitle={Proceedings of the IEEE International Conference on Robotics and Automation (ICRA)},
+  year={2026},
+}
 ```
